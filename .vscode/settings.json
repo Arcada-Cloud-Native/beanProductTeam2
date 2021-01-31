@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/6d91ffbd-9ba7-44e4-ae81-7adf36eb3c2f/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/attesroombookingrestapi",
+    "appService.deploySubpath": "."
+}
