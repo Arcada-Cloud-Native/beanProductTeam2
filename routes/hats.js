@@ -48,6 +48,7 @@ router.post('/', (req, res, next) => {
         color: req.body.color,
         description: req.body.description,
         price: req.body.price,
+        picture: req.body.picture
     });
 
     hat.save()
