@@ -16,3 +16,4 @@ The route has the implementations of POST that contains the constant from our mo
 You can of course also GET the data that has been saved on your database with out API.
     
     
+Swagger API mockup filehttps://app.swaggerhub.com/apis/doodeljoodel/openAPI3/1.0.1
