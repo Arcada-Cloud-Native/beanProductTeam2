@@ -22,7 +22,7 @@ router.get('/', (req, res, next) => {
 
 
 //eventlistener för GET requests
-router.get('/:id', (req, res, next) => {
+router.get('/id/:id', (req, res, next) => {
     
     const id = req.params.id;
     
@@ -38,6 +38,30 @@ router.get('/:id', (req, res, next) => {
             next(err);
         });
 });
+
+
+router.get('/color/:color', (req, res, next) => {
+    
+    const search_key = req.params.color
+    
+    Hat.find({color: search_key}).exec()
+        .then(document => {
+            res.status(200).json(document);
+        })
+        .catch(error => {
+            console.log(error);
+            const err = new Error(error);
+            err.status = error.status || 500;
+            
+            next(err);
+        });
+});
+
+
+
+
+
+
 
 
 
