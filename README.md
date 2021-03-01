@@ -19,7 +19,7 @@ You can of course also GET the data that has been saved on your database with ou
     * price: Number,
     * picture: String,
 
-*id and sku are generated automatically
+note: id and sku are generated automatically
 
 
 /hats/color/{color}
