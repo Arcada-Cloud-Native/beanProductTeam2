@@ -42,6 +42,7 @@ Our hat.js model consists of a constant that has the the following properties:
     
 # Example
 An example GET request from our API looks like the following:
+```
 {
         "_id": "603cbe955891240ca03242ea",
         "name": "beanie_yellow",
@@ -53,5 +54,6 @@ An example GET request from our API looks like the following:
         "sku": "bea-53-yel",
         "__v": 
 }
+```
 
 Swagger API mockup file https://app.swaggerhub.com/apis/doodeljoodel/openAPI3/1.0.2
