@@ -3,6 +3,23 @@
 This is the Bean hat product branch for Cloud native apps course.
 The API consists of 1 model and 1 route.
 
+# Routes
+
+The route has the implementations of POST that contains the constant from our model, which can be saved on a database such as Azure and potentially AWS.
+You can of course also GET the data that has been saved on your database with out API.
+   
+/hats
+* GET - Returns a list of all hats
+* POST - Creates a new hat object
+
+/hats/color/{color}
+* Returns a filtered list of all the hats with a specific color
+
+/hats/id/{id}
+*Returns a hat object with the specific ID
+
+
+# Models
 Our hat.js model consists of a constant that has the the following properties:
     _id: mongoose.Types.ObjectId,
     name: String,
@@ -12,12 +29,7 @@ Our hat.js model consists of a constant that has the the following properties:
     price: Number,
     picture: String
     
-The route has the implementations of POST that contains the constant from our model, which can be saved on a database such as Azure and potentially AWS.
-You can of course also GET the data that has been saved on your database with out API.
-    
-    
-Swagger API mockup filehttps://app.swaggerhub.com/apis/doodeljoodel/openAPI3/1.0.1
-
+# Example
 An example GET request from our API looks like the following:
 {
         "_id": "603cbe955891240ca03242ea",
@@ -30,3 +42,5 @@ An example GET request from our API looks like the following:
         "sku": "bea-53-yel",
         "__v": 
 }
+
+Swagger API mockup file https://app.swaggerhub.com/apis/doodeljoodel/openAPI3/1.0.1
