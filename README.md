@@ -16,7 +16,7 @@ You can of course also GET the data that has been saved on your database with ou
 * Returns a filtered list of all the hats with a specific color
 
 /hats/id/{id}
-*Returns a hat object with the specific ID
+* Returns a hat object with the specific ID
 
 
 # Models
