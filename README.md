@@ -11,7 +11,7 @@ You can of course also GET the data that has been saved on your database with ou
 /hats
 * GET - Returns a list of all hats
 * POST - Creates a new hat object. 
-    * Required Parameters: 
+    * **Required Parameters**: 
     * name: String,
     * size: Number,
     * color: String,
