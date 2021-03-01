@@ -17,3 +17,16 @@ You can of course also GET the data that has been saved on your database with ou
     
     
 Swagger API mockup filehttps://app.swaggerhub.com/apis/doodeljoodel/openAPI3/1.0.1
+
+An example GET request from our API looks like the following:
+{
+        "_id": "603cbe955891240ca03242ea",
+        "name": "beanie_yellow",
+        "size": 53,
+        "color": "yellow",
+        "description": "Funny hat with a size of 53",
+        "price": 22,
+        "picture": "https://i.imgur.com/Jzjqd28.png",
+        "sku": "bea-53-yel",
+        "__v": 
+}
