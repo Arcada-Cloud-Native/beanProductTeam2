@@ -23,7 +23,7 @@ note: id and sku are generated automatically
 
 
 /hats/color/{color}
-* Returns a filtered list of all the hats with a specific color
+* Returns a list of all the hats with a specific color
 
 /hats/id/{id}
 * Returns a hat object with the specific ID
