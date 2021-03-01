@@ -10,7 +10,18 @@ You can of course also GET the data that has been saved on your database with ou
    
 /hats
 * GET - Returns a list of all hats
-* POST - Creates a new hat object
+* POST - Creates a new hat object. 
+    Required Parameters: 
+    
+    name: String,
+    size: Number,
+    color: String,
+    description: String,
+    price: Number,
+    picture: String,
+
+id and sku are generated automatically
+
 
 /hats/color/{color}
 * Returns a filtered list of all the hats with a specific color
@@ -27,7 +38,8 @@ Our hat.js model consists of a constant that has the the following properties:
     color: String,
     description: String,
     price: Number,
-    picture: String
+    picture: String,
+    sku: String
     
 # Example
 An example GET request from our API looks like the following:
