@@ -43,4 +43,4 @@ An example GET request from our API looks like the following:
         "__v": 
 }
 
-Swagger API mockup file https://app.swaggerhub.com/apis/doodeljoodel/openAPI3/1.0.1
+Swagger API mockup file https://app.swaggerhub.com/apis/doodeljoodel/openAPI3/1.0.2
