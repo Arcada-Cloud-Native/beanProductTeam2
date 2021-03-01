@@ -73,13 +73,13 @@ router.post('/', (req, res, next) => {
         });
 
 });
-/*
+
 //eventlistener för DELETE requests
 router.delete('/:id', (req, res, next) => {
-    Room.remove({_id: req.params.id}).exec()
+    Hat.remove({_id: req.params.id}).exec()
         .then(result => {
             res.status(200).json({
-                message: "Room deleted",
+                message: "Hat deleted",
             })
         })
         .catch(error => {
@@ -90,7 +90,7 @@ router.delete('/:id', (req, res, next) => {
             next(err);
         });
 });
-
+/*
 //eventlistener för PATCH requests
 router.patch('/:id', (req, res, next) => {    
     Room.update({_id: req.params.id}, {$set: req.body})
