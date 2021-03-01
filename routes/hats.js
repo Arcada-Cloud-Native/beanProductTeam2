@@ -39,6 +39,9 @@ router.get('/:id', (req, res, next) => {
         });
 });
 
+
+
+
 //eventlistener för POST requests
 router.post('/', (req, res, next) => {
     const hat= new Hat({
@@ -48,7 +51,9 @@ router.post('/', (req, res, next) => {
         color: req.body.color,
         description: req.body.description,
         price: req.body.price,
-        picture: req.body.picture
+        picture: req.body.picture,
+        sku: req.body.name[0]+req.body.name[1]+ req.body.name[2]+"-"+req.body.size+"-"+req.body.color[0]+req.body.color[1]+req.body.color[2]
+       
     });
 
     hat.save()

@@ -7,7 +7,9 @@ const hatSchema = mongoose.Schema({
     color: String,
     description: String,
     price: Number,
-    picture: String
+    picture: String,
+    sku: String
+    
 });
 
 module.exports = mongoose.model('Hat', hatSchema);
