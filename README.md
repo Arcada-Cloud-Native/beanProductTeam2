@@ -8,7 +8,7 @@ The API consists of 1 model and 1 route.
 # Routes
 
 The route has the implementations of POST that contains the constant from our model, which can be saved on a database such as Azure and potentially AWS.
-You can of course also GET the data that has been saved on your database with out API.
+You can of course also GET the data that has been saved on your database with our API.
    
 /hats
 * GET - Returns a list of all hats
