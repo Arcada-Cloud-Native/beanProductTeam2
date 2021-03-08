@@ -13,6 +13,7 @@ You can of course also GET the data that has been saved on your database with ou
 /hats
 * GET - Returns a list of all hats
 * POST - Creates a new hat object. 
+* DELETE - Deletes a hat object based on id. 
      **Required Parameters**: 
     * name: String,
     * size: Number,
