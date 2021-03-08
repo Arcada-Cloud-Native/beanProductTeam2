@@ -59,4 +59,4 @@ An example GET request from our API looks like the following:
 }
 ```
 
-Swagger API mockup file https://app.swaggerhub.com/apis/doodeljoodel/openAPI3/1.0.2
+Swagger API file https://app.swaggerhub.com/apis/doodeljoodel/openAPI3/1.0.2
