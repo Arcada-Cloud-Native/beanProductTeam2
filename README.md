@@ -1,5 +1,7 @@
 # beanProduct
 
+API endpoint : https://beanhatproduct.azurewebsites.net/hats
+
 This is the Bean hat product branch for Cloud native apps course.
 The API consists of 1 model and 1 route.
 
