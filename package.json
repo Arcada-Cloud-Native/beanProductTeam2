@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon server.js"
   },
-  "author": "Atte Hätinen",
+  "author": "Atte Hätinen,Ivan Akkuratov, Tobias Holm",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.0.0",

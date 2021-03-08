@@ -1,4 +1,4 @@
-//DEN HÄR FILEN FUNGERAR SOM REQUEST LISTENER TILL ALLA REQUESTS SOM RIKTAS MOT localhost:8080/rooms
+
 const express = require('express');
 const mongoose = require('mongoose');
 const router = express.Router();
@@ -21,7 +21,7 @@ router.get('/', (req, res, next) => {
 });
 
 
-//eventlistener för GET requests
+//eventlistener för GET requests med id
 router.get('/id/:id', (req, res, next) => {
     
     const id = req.params.id;
@@ -39,7 +39,7 @@ router.get('/id/:id', (req, res, next) => {
         });
 });
 
-
+//eventlistener för GET requests med color
 router.get('/color/:color', (req, res, next) => {
     
     const search_key = req.params.color
@@ -56,13 +56,6 @@ router.get('/color/:color', (req, res, next) => {
             next(err);
         });
 });
-
-
-
-
-
-
-
 
 
 
@@ -98,7 +91,7 @@ router.post('/', (req, res, next) => {
 
 });
 
-//eventlistener för DELETE requests
+//eventlistener för DELETE requests med id
 router.delete('/:id', (req, res, next) => {
     Hat.remove({_id: req.params.id}).exec()
         .then(result => {
@@ -114,27 +107,10 @@ router.delete('/:id', (req, res, next) => {
             next(err);
         });
 });
-/*
-//eventlistener för PATCH requests
-router.patch('/:id', (req, res, next) => {    
-    Room.update({_id: req.params.id}, {$set: req.body})
-        .exec()
-        .then(result => {
-            res.status(200).json({
-                message: "Room updated!"
-            });
-        })
-        .catch(error => {
-            console.log(error);
-            const err = new Error(error);
-            err.status = error.status || 500;
-            
-            next(err);
-        }); 
-});*/
 
-//Om ett/en HTTP-kommando/typ som inte stöds emottagits genererar vi ett error-objekt och
-//skickar det vidare till "fellyssnarfunktionen" (rad 27 i app.js) som tar hand om felmeddelanden
+
+
+//error handling
 router.use((req, res, next) => {
     const error = new Error("Only GET, POST, PUT, DELETE commands supported");
     error.status = 500;
